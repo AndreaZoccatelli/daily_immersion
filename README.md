@@ -25,7 +25,7 @@ Immersion is actually a technique used to learn a new language:
       E[Article]-->|Send via API|F[Telegram Bot]
       E[Article]-->G[Create-Article-Title Prompt]
       G[Create-\nArticle-Title Prompt]-->|API request|H[Gemini]
-      H[Bard]-->|Response|I[Article\nTitle]
+      H[Gemini]-->|Response|I[Article\nTitle]
       I[Article Title]-->|Write to|B[(already\n_covered.xlsx)]
 ```
 
