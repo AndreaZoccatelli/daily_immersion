@@ -32,5 +32,5 @@ Immersion is actually a technique used to learn a new language:
 ### Procedure
 1. [Create Bard API key]()
 2. [Create Telegram Bot](https://www.directual.com/lesson-library/how-to-create-a-telegram-bot), annotate and write token in telegram_bot.json
-3. Navigate to https://api.telegram.org/bot<YourBOTToken>/getUpdates annotate and write chat_id (under the key message['chat']['id']) in telegram_bot.json
+3. Navigate to `https://api.telegram.org/bot<YourBOTToken>/getUpdates` annotate and write chat_id (under the key message['chat']['id']) in telegram_bot.json
 4. Schedule main.py ([pythonanywhere](https://www.pythonanywhere.com) allows to schedule one file for free)
