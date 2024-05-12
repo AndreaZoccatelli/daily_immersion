@@ -18,19 +18,19 @@ Immersion is actually a technique used to learn a new language:
   flowchart LR;
       A[topics.txt]-->|include|C[Prompt]
       B[(already\n_covered.xlsx)]-->|exclude last 5 titles|C[Create-Article\nPrompt]
-      C[Create-Article Prompt]-->|API request|D[Bard]-->|Response|E[Article]
+      C[Create-Article Prompt]-->|API request|D[Gemini]-->|Response|E[Article]
 ```
 ```mermaid
   flowchart LR;
       E[Article]-->|Send via API|F[Telegram Bot]
       E[Article]-->G[Create-Article-Title Prompt]
-      G[Create-\nArticle-Title Prompt]-->|API request|H[Bard]
+      G[Create-\nArticle-Title Prompt]-->|API request|H[Gemini]
       H[Bard]-->|Response|I[Article\nTitle]
       I[Article Title]-->|Write to|B[(already\n_covered.xlsx)]
 ```
 
 ### Procedure
-1. [Create Bard API key]()
+1. [Create Gemini API key](https://aistudio.google.com/app/apikey)
 2. [Create Telegram Bot](https://www.directual.com/lesson-library/how-to-create-a-telegram-bot), annotate and write token in telegram_bot.json
 3. Navigate to `https://api.telegram.org/bot<YourBOTToken>/getUpdates` annotate and write chat_id (under the key message['chat']['id']) in telegram_bot.json
 4. Schedule main.py ([pythonanywhere](https://www.pythonanywhere.com) allows to schedule one file for free)
