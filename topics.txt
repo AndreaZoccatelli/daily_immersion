@@ -1,4 +1,4 @@
-Machine Learning
-Deep Learning
-Databases
-Algorithms
+Multi-Head Attention
+Transformers
+Seq2seq
+Vanishing gradients
